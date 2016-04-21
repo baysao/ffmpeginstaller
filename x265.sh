@@ -32,6 +32,7 @@ cd $INSTALL_SDIR
 echo "Removing old source"
    rm -vrf $INSTALL_SDIR/x265*
 apt-get -y --force-yes install libopus-dev libmp3lame-dev mercurial cmake 
+yum  install -y libopus-dev libmp3lame-dev mercurial cmake 
 
 hg clone https://bitbucket.org/multicoreware/x265
 cd x265/build/linux
